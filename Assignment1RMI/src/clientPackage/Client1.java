@@ -11,7 +11,7 @@ public class Client1 {
 			int choice;
 			String data;
 			Scanner s = new Scanner(System.in);
-			Hasher stub = (Hasher) Naming.lookup("rmi://localhost:5000/hash");
+			Hasher stub = (Hasher) Naming.lookup("rmi://127.0.0.1:5000/hash");
 			
 			System.out.print("Enter the choice of algorithm:\n1 for SHA-256\n2 for SHA-512\n3 for MD5\nYour choice :: ");
 			choice = s.nextInt();

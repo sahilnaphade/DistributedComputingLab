@@ -23,6 +23,7 @@ public class HasherRemote extends UnicastRemoteObject implements Hasher {
 	 */
 	public String createHash(String data, int choice) throws RemoteException, NoSuchAlgorithmException {
 		// get the message digest and initialise it with the algorithm
+		System.out.println("Server received the data : " + data);
 		MessageDigest md = null;
 		switch(choice) {
 			case 1:
