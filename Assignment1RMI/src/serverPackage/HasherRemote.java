@@ -51,7 +51,7 @@ public class HasherRemote extends UnicastRemoteObject implements Hasher {
 			hexString.insert(0, '0');
 		}
 		
-		String HashedString = new String(data + ":" + hexString.toString());
+		String HashedString = new String(data + " : " + hexString.toString());
 		return HashedString;
 	}
 
