@@ -27,3 +27,7 @@ hs_err_pid*
 /.metadata/
 
 *.out
+
+# Submission files
+*.docx
+*.pdf
