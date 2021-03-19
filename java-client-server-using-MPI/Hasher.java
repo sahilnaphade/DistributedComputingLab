@@ -28,7 +28,7 @@ import java.rmi.server.UnicastRemoteObject;
       int      p = MPI.COMM_WORLD.Size() ;
 
 	if(myrank == 0){
-		for (source =1;source < p;source++) {
+
 			String myhost = MPI.Get_processor_name();
 			String[] s = {
 					new String("Assignment 2"),
@@ -42,7 +42,6 @@ import java.rmi.server.UnicastRemoteObject;
 			}
 	      	
 	      	System.out.println("Sent the message");
-		}
 	}
 
       else if(myrank != 0){

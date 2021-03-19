@@ -4,6 +4,9 @@
 .project
 .settings/*
 
+Java-CORBA/.settings/*
+Java-CORBA/orb.db
+
 # Log file
 *.log
 

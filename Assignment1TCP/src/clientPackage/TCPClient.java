@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.net.*;
 import java.util.*;
 
-class Client {
+class TCPClient {
 	public static void main(String[] args) throws Exception{
 		Integer portNo;	// To accept the port number to connect the client
 		Scanner scn1 = new Scanner(System.in);	// To converse with the server

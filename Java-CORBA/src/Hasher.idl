@@ -1,0 +1,5 @@
+module HasherApp{
+	interface Hasher {
+		string hashTheString(in string data);
+	};	
+};

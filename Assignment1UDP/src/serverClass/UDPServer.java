@@ -14,12 +14,12 @@ import java.util.*;
  * 5. A main function which will call the service function.
  */
 
-public class Server {
+public class UDPServer {
 	private DatagramSocket socket;
 	private List <String> listOfQuotes = new ArrayList <String>();
 	private Random random;
 	
-	public Server(int port) throws SocketException {
+	public UDPServer(int port) throws SocketException {
 		socket = new DatagramSocket(port);
 		random = new Random();
 	}
@@ -61,7 +61,7 @@ public class Server {
 		int port = Integer.parseInt(args[1]);
 		
 		try {
-			Server s1 = new Server(port);
+			UDPServer s1 = new UDPServer(port);
 			s1.loadQuotesFromFile(quoteFile);
 			s1.service();
 		}

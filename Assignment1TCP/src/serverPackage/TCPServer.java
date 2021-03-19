@@ -6,7 +6,7 @@ import java.net.*;
 //import serverPackage.ClientHandler;
 
 
-public class Server {
+public class TCPServer {
 	public static void main(String[] args) throws IOException {
 		Scanner scn1 = new Scanner(System.in);// To converse with the client
 		String receivedData = "", dataToTransmit = "";
