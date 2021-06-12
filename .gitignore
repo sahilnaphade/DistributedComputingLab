@@ -34,3 +34,9 @@ hs_err_pid*
 # Submission files
 *.docx
 *.pdf
+*.rar
+*.zip
+Outputs/
+apache*
+Outputs/*
+jax*
